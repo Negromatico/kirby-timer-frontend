@@ -162,7 +162,7 @@
         return actions.order.create({
           purchase_units: [{
             amount: {
-              value: '1'
+              value: '100'
             }
           }]
         });
@@ -176,7 +176,7 @@
           fetch(`${backendUrl}/add-time`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({ amount: 1 }) // monto fijo $5, puedes ajustarlo
+            body: JSON.stringify({ amount: 100 }) // monto fijo $5, puedes ajustarlo
           })
           .then(res => res.json())
           .then(data => {
